@@ -1,4 +1,4 @@
-FROM php:8.2-apache
+FROM php:8.3-apache
 RUN \
     PHP_EXTENSION_INSTALLER_VERSION=$(curl -s https://api.github.com/repos/mlocati/docker-php-extension-installer/releases/latest | grep 'tag_name' | cut -d '"' -f4) ; \
     echo "install-php-extensions Version: ${PHP_EXTENSION_INSTALLER_VERSION}" ; \
